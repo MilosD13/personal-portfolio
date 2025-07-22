@@ -39,7 +39,7 @@
 								<li><a href="#coding">Coding</a></li>
 								<li><a href="#Recommendations">Reference</a></li>
 								<li><a href="#cert">Certificate</a></li>
-								<li><a href="mailto:milosdokic13@gmail.com?subject=CV%20Request" class="button icon solid fa-download" target="_blank">cv</a></li>
+								<li><a href="mailto:milosdokic13@gmail.com?subject=CV%20Request" class="button icon solid fa-envelope" target="_blank">cv</a></li>
 
 							</ul>
 						</nav>
@@ -133,10 +133,32 @@
 							</header>
 						<!-- 3 coding -->
 						<header>
-							<h2>Book Radar <br>Full Stack</h2>
+						<h2>Crew Mingle</h2>
+						</header>
+						<img class="image fit" src="images/crew-mingle.png" alt="Crew Mingle" />
+						<p>As the co-founder and lead developer of Crew Mingle, I architected and delivered a highly-rated cross-platform mobile application built with Flutter, successfully launched on both the App Store and Google Play. The app connects maritime crew members worldwide through secure chat, intuitive profile management, contract tracking, and real-time voyage alerts.</p>
+						<p>Leveraging a robust .NET 8 backend hosted on Azure, alongside Firebase for real-time data management and secure, role-based authentication, I implemented advanced state management using Riverpod, drastically reducing API latency by 50% through aggressive local caching, pagination, and an offline-first strategy. A sophisticated push-notification pipeline (Firebase Cloud Messaging → Azure Functions → RealtimeDb) was established, delivering critical alerts in under 300 ms, significantly boosting daily user engagement.</p>
+						<p>I streamlined the development lifecycle by setting up automated CI/CD pipelines via GitHub Actions, cutting manual deployment tasks from hours down to minutes. Beyond development, as co-founder, I guided product strategy through active user feedback loops, prioritizing features based on ICE scoring methodology, and effectively managing a two-person agile team in fortnightly Scrum cycles. The app earned a ★5 rating and onboarded over 450 users from 50+ countries within two weeks of launch.</p>
+						<ul class="actions special">
+							<li></button ><a href="https://crewmingle.com/" class="button" target="_blank">View Here</a>
+						</ul>
+						<!-- 3 coding -->
+						<header>
+							<h2>Schmick <br>Scratch & Dent Assist</h2>
+						</header>
+						<img class="image fit" src="images/schmick.png" alt="Book Radar" />
+						<p>Engineered a robust React Native mobile application using Expo Client, seamlessly integrated with a secure MSSQL database. Enhanced customer interactions and transformed business workflows through intuitive design and efficient backend management powered by .NET Web APIs. Integrated Azure B2C authentication to ensure secure and streamlined user access. Maintained high standards for code quality and consistency using Prettier and linting tools, and leveraged GitHub Actions to implement automated CI/CD pipelines for rapid deployments. Ensured application reliability and performance through comprehensive unit and integration testing with Jest and React Native Testing Library.</p>
+						<ul class="actions special">
+							<li></button ><a href="https://schmickclub.com/" class="button" target="_blank">View Here</a>
+						</ul>
+						<!-- 3 coding -->
+						<header>
+							<h2>Book Radar<br> Full Stack</h2>
 						</header>
 						<img class="image fit" src="images/book-radar.jpg" alt="Book Radar" />
-						<p>In collaboration with a colleague, we developed a comprehensive full-stack website leveraging the powerful capabilities of Blazor Web Assembly and .NET 8 frameworks. Our project stands out by integrating a robust Web API, which facilitates seamless interaction between the frontend and backend, ensuring a fluid user experience. We meticulously implemented JWT tokens to secure the application, providing a reliable system for authentication and authorization that supports multiple user roles. This differentiation of roles, including an advanced admin panel, allows for detailed management and control over the application's functionality and user access levels. The entire solution is hosted on Azure as a Software as a Service (SaaS) project, benefiting from Azure's scalable and secure cloud infrastructure. This setup not only enhances the application's performance but also simplifies the maintenance and deployment process torugh GitHub Actions, ensuring our project remains cutting-edge and efficient.</p>
+						<p>In collaboration with a colleague, we developed a comprehensive full-stack website leveraging the powerful capabilities of Blazor Web Assembly and .NET 8 frameworks.</p>
+						<p> Our project stands out by integrating a robust Web API, which facilitates seamless interaction between the frontend and backend, ensuring a fluid user experience. We meticulously implemented JWT tokens to secure the application, providing a reliable system for authentication and authorization that supports multiple user roles. </p>
+						<p>This differentiation of roles, including an advanced admin panel, allows for detailed management and control over the application's functionality and user access levels. The entire solution is hosted on Azure as a Software as a Service (SaaS) project, benefiting from Azure's scalable and secure cloud infrastructure. This setup not only enhances the application's performance but also simplifies the maintenance and deployment process torugh GitHub Actions, ensuring our project remains cutting-edge and efficient.</p>
 						<ul class="actions special">
 							<li></button ><a href="https://www.book-radar.com/" class="button" target="_blank">View Here</a>
 						</ul>
@@ -365,7 +387,10 @@
 					</div>
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">© MilosD 2024</p>
+						<p class="copyright">© MilosD <span id="year"></span></p>
+						<script>
+							document.getElementById('year').textContent = new Date().getFullYear();
+						</script>
 					</footer>
 			</div>
 		<!-- BG -->
